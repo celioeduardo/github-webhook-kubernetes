@@ -173,7 +173,9 @@
 							<env>
 								<SYSTEM_PROPS>-Dfoo=bar</SYSTEM_PROPS>
 							</env>
-							<entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
+							<!-- <entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint> -->
+							<entryPoint>["sh", "-c", "java $${SYSTEM_PROPS} -jar /${project.build.finalName}.jar"]</entryPoint>
+							
 							<resources>
 								<resource>
 									<targetPath>/</targetPath>
