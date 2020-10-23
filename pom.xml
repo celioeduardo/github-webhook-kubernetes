@@ -173,6 +173,7 @@
 							<registryUrl>${DOCKER_REGISTRY_URL}</registryUrl> -->
 							<imageName>${DOCKER_REGISTRY_ORGANIZATION}/${project.artifactId}</imageName>
 							<baseImage>openjdk:8-alpine</baseImage>
+							<useConfigFile>true</useConfigFile>
 							<!-- <baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage> -->
 							<imageTags>
 								<imageTag>${project.version}</imageTag>
