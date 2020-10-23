@@ -169,8 +169,8 @@
 							<goal>push</goal>
 						</goals>
 						<configuration>
-							<serverId>${DOCKER_SERVER_ID}</serverId>
-							<registryUrl>${DOCKER_REGISTRY_URL}</registryUrl>
+							<!-- <serverId>${DOCKER_SERVER_ID}</serverId>
+							<registryUrl>${DOCKER_REGISTRY_URL}</registryUrl> -->
 							<imageName>${DOCKER_REGISTRY_ORGANIZATION}/${project.artifactId}</imageName>
 							<baseImage>openjdk:8-alpine</baseImage>
 							<!-- <baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage> -->
